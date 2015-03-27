@@ -5,7 +5,7 @@ var sidebar = require('../helpers/sidebar');
 
 module.exports = {
 
-	//GRAB IMAGES AS A VIEW MODEL
+    //GRAB IMAGES AS A VIEW MODEL
     index: function(req, res) {
         var viewModel = {
             images: {},
