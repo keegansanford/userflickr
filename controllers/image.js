@@ -108,6 +108,7 @@ module.exports = {
 
                 var newComment = new Models.Comment(req.body);
                 newComment.image_id = image._id;
+                newComment.user = req.user.username;
                 newComment.save(function(err, comment) {
 
 

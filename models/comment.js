@@ -5,9 +5,8 @@ var path = require('path');
 
 var CommentSchema = new Schema({
 	image_id: {type: ObjectId},
-	name: {type: String },
-	email: {type: String },
 	comment: {type: String },
+	user: {type: String },
 	timestamp: { type: Date, 'default': Date.now }
 });
 

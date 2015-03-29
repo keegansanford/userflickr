@@ -1,10 +1,10 @@
 var express = require('express');
 var config = require('./server/configure');
 var mongoose = require('mongoose');
-//var passport = require ('./server/passport');
+var passport = require ('./server/passport');
 
 var app = express();
-//passport = passport();
+passport = passport();
 //sets the default port for our server
 app.set('port', process.env.PORT || 3000);
 //sets the directory for views (pages)
